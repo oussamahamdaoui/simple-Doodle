@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body,html{
+    margin:0px;
+    padding: 0px;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#eyesController{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    top:10px;
+    left:10px;
+}
+
+#faceController {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    top: 10px;
+    right: 10px;
+}
+
+.border {
+    border: 1px dashed grey;
+}
+    </style>>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <svg width="900" height="900">
+
+        <rect style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+            class="ear" id="earL" width="56.126598" height="18.708866" x="98.502998" y="76.47258" ry="9.3544331" />
+        <rect ry="9.3544331" y="76.47258" x="19.774" height="18.708866" width="56.126598" id="earR" class="ear" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+        />
+        <rect ry="52.160713" y="27.880949" x="34.773808" height="256.75137" width="104.85596" id="body" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+        />
+        <g transform="translate(2.5351181)" id="face">
+            <rect style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                id="mouth" width="66.523811" height="8.3154764" x="51.404762" y="116.70535" ry="4.1577382" />
+            <g id="eyeL">
+                <circle r="12.851191" cy="84.955353" cx="70.303566" style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                />
+                <circle r="3.7797618" cy="84.955353" cx="70.303566" class="eyeball" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                />
+                <rect ry="0" class="pupilT" y="60.764877" x="55.184517" height="10.961309" width="29.104166" id="rect827" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.17536891;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                />
+                <rect class="pupilB" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.17536891;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                    id="rect831" width="29.104166" height="10.961309" x="55.184517" y="98.184517" ry="0" />
+            </g>
+            <g id="eyeR" transform="translate(29.104164)">
+                <circle style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                    id="circle839" cx="70.303566" cy="84.955353" r="12.851191" />
+                <circle class="eyeball" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.25381136;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                    id="circle841" cx="70.303566" cy="84.955353" r="3.7797618" />
+                <rect class="pupilT" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.17536891;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                    id="rect843" width="29.104166" height="10.961309" x="55.184517" y="60.764877" ry="0" />
+                <rect class="pupilB" ry="0" y="98.184517" x="55.184517" height="10.961309" width="29.104166" id="rect845" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.17536891;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+                />
+            </g>
+        </g>
+
+    </svg>
+    <!--
+    <div id="body">
+        <div id="eaL" class="ear"></div>
+        <div id="eaR" class="ear"></div>
+        <div id="face">
+            <div class="eye" id="eL">
+                <div class="eyeball"></div>
+                <div class="pupilB"></div>
+                <div class="pupilT"></div>
+            </div>
+            <div class="eye" id="eR">
+                <div class="eyeball"></div>
+                <div class="pupilB"></div>
+                <div class="pupilT"></div>
+            </div>
+            <div id="mouth"></div>
+        </div>
+        
+    </div>
+-->
+
+    <div id="video" width="800" height="800">
+
+    </div>
+
+    <div id="eyesController" class="border"></div>
+    <div id="faceController" class="border"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jqueryPressure.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
